@@ -165,3 +165,11 @@ const detectCollision = (a, b) => {
            a.y < b.y + b.height &&
            a.y + a.height > b.y;
 }
+
+// prevent scrolling
+
+window.addEventListener("keydown", function(e) {
+    if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
+        e.preventDefault();
+    }
+}, false);
