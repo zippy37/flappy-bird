@@ -1,0 +1,25 @@
+:root {
+    --bg-light: rgb(240,240,250);
+    --bg-darker: rgb(100,80,110);
+    --bg-darkest: rgb(50, 40, 70);
+    --bg-purple: rgb(30,20,50);
+  }
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    display: grid;
+    margin: 0 auto;
+    background-color: var(--bg-light);
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#board {
+    background-image: url(./flappybirdbg.png);
+    margin: 0 auto;
+    outline: 2px solid black;
+}
